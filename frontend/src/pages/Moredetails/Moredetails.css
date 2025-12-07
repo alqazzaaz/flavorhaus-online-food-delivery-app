@@ -1,0 +1,36 @@
+.moredetails-page {
+  position: relative;
+  padding: 2rem; /* optional */
+}
+
+/* Back button top-left */
+.back-btn {
+  position: fixed; /* bleibt sichtbar beim scrollen */
+  top: 16px;
+  left: 16px;
+  z-index: 10010; /* über allem (Navbar hat z-index 9999) */
+  background-color: #f6ba20;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+/* Hover / Active */
+.back-btn:hover {
+  background-color: rgb(18, 18, 18);
+  color: #ffffff;
+  transition: 0.4s ease-in-out;
+}
+
+/* Auf kleinen Bildschirmen ggf. kleiner positionieren */
+@media (max-width: 576px) {
+  .back-btn {
+    top: 10px;
+    left: 10px;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,176 @@
+:root {
+  --nav-height: 100px; 
+}
+.Headerr {
+    padding-top: 0.1rem;
+}
+.home-header {
+  min-height: 650px;
+  background-color: #9a401c;   
+  position: relative;
+  padding: 7rem 1rem 2rem;
+  color: #fff;
+  width: 100vw;                 
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;           
+  margin-right: -50vw;
+  margin-top: -72px;
+  margin-bottom: 30px;
+}
+
+
+.content-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    color: #fff;
+    text-align: left;
+    z-index: 4;
+}
+
+.header-text {
+    z-index: 4;
+}   
+
+.header-text h1 {
+    font-family: "Righteous", sans-serif;
+    font-size: 6.2rem;
+    line-height: 6.8rem;
+    font-weight: 800;
+}
+
+.header-text p {
+    --font-family-1: "Mitr", sans-serif;
+    font-size: 1.08rem;
+    margin: 2rem 0 1rem;
+}
+
+.header-text h3 {
+    font-family: "Righteous", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    line-height: 2.7rem;
+    font-weight: 500;
+}
+
+.header-text .btn {
+    max-width: 160px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #eab11e;
+    color: #fff;
+}
+
+
+.header-text .btn:hover {
+    background: #121212;
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.home-img {
+    width: 100%;
+    max-width: 540px;
+    z-index: 4;
+}
+.homemask-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center ;
+}
+
+.feature {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 310px));
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgb( 18 18 18 / 20%);
+}
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-img {
+    width: 110px;
+    
+}
+
+.feature-text h4 {
+    font-family: "Righteous", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;}
+    
+
+
+
+    @media (max-width:1410px) {
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .my-feature {
+            width: 90%;
+        }
+
+        .feature-box {
+            border-bottom: 1px solid rgb( 18 18 18 / 20%);
+            padding-bottom: 12px;
+        }
+
+
+    }
+      @media (max-width:1190px) { 
+
+        .header-text h1 {
+            font-size: 4.5rem;
+            line-height: 4.8rem;
+        }
+        .header-text h3 {
+            font-size: 2rem;
+            line-height: 2rem;
+            font-weight: 400;
+        }
+
+      }
+
+     @media (max-width:790px) { 
+
+        .content-header {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+        }
+        .home-text p {
+            margin: 1rem 0;
+
+        }
+        .btn {
+            padding: 14px 24px;
+        }
+
+     }

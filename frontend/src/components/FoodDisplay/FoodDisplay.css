@@ -1,0 +1,20 @@
+.food-grid-container {
+  width: 100%;
+  max-width: 1200px;   /* LIMIT WIDTH TO STOP 6-ITEM ROW */
+  margin: 0 auto;      /* CENTER THE GRID */
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.food-display-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 15px;
+}

@@ -1,0 +1,187 @@
+/* --- CART PAGE LAYOUT --- */
+
+.container h1 {
+  font-family: "Righteous", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Card wrapper */
+.cart-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Each item */
+.cart-item {
+  padding: 12px 0;
+  align-items: center;
+}
+
+.cart-item + .cart-item {
+  border-top: 1px solid #e9ecef;
+}
+
+/* Item image */
+.cart-img {
+  width: 100%;
+  max-width: 95px;
+  height: 95px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Title + category */
+.cart-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cart-category {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Quantity buttons */
+.qty-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.qty-btn:hover {
+  background: #f3f3f3;
+}
+
+.qty-number {
+  width: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Price */
+.cart-price {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Remove button */
+.remove-btn {
+  border: none;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  color: #d9534f;
+}
+
+.remove-btn:hover {
+  background: #ffe5e5;
+}
+
+/* --- SUMMARY CARD --- */
+.cart-summary {
+  background: #ffffff !important;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.cart-summary .card-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.summary-total {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Checkout button */
+.btn-checkout {
+  background-color: #f6ba20;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.btn-checkout:hover {
+  background-color: #e3a619;
+}
+
+/* Continue shopping */
+.btn-shop {
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+/* Quantity row perfectly aligned */
+.qty-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.qty-btn:hover {
+  background: #eee;
+}
+
+.qty-display {
+  min-width: 22px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-shop {
+  border: 1px solid #070404 !important; /* schwarzer Rand */
+  color: #000000 !important; /* weißer Text */
+  background: transparent !important; /* normal kein Hintergrund */
+  transition: all 0.3s ease;
+}
+
+/* Hintergrund wird schwarz beim Hover / Click */
+.btn-shop:hover,
+.btn-shop:active,
+.btn-shop:focus {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+}

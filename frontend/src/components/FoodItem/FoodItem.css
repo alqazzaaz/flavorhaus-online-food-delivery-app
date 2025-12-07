@@ -1,0 +1,362 @@
+/* Wrapper sorgt nur für Position im Grid */
+.food-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* --- CARD: Shadow, Border, leichte Bewegung --- */
+.food-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e5e5;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  max-width: 330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Hover Effekt */
+.food-card-wrapper:hover .food-card {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  border-color: #dddddd;
+}
+
+/* IMAGE */
+.food-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.food-card-wrapper:hover .food-image {
+  transform: scale(1.015);
+}
+
+/* BODY */
+.food-body {
+  padding: 18px;
+  flex-grow: 1;
+}
+
+.food-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.food-desc {
+  font-size: 0.95rem;
+  color: #666;
+  min-height: 60px;
+  line-height: 1.35;
+}
+
+.food-bottom {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-price {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #111;
+}
+
+.food-rating {
+  font-size: 0.9rem;
+  color: black;
+}
+
+/* FOOTER */
+.food-footer {
+  padding: 14px 18px;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f1f1;
+}
+
+/* Buttons */
+.food-btn-show,
+.food-btn-add {
+  padding: 9px 16px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  background: #fff;
+  color: #333;
+  font-size: 0.93rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.food-btn-show:hover,
+.food-btn-add:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* QTY */
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qty-btn {
+  padding: 7px 13px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.qty-btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.qty-number {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* ---------- AI FEATURE (in-card) ---------- */
+.ai-calc-link {
+  margin-top: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: #444;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.ai-calc-link:hover {
+  color: #111;
+}
+
+.ai-box {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ai-input {
+  width: 75px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.85rem;
+}
+
+.ai-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.ai-btn:hover {
+  background: #333;
+  color: white;
+}
+
+.ai-result {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.ai-result-label {
+  font-size: 0.75rem;
+  color: #4a4a4a;
+  margin-bottom: 6px;
+  background: #e8e8e8;
+  padding: 3px 8px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+/* =======================================================
+   AI POPUP
+   ======================================================= */
+
+.ai-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ai-popup {
+  background: white;
+  width: 360px;
+  padding: 26px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+  animation: scaleIn 0.25s ease;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.ai-popup-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.ai-popup-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.ai-popup-input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.ai-popup-input {
+  width: 110px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.ai-popup-unit {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* --------------- PRIMARY BUTTON (Schätzen lassen) --------------- */
+.ai-popup-btn {
+  margin-top: 22px;
+  margin-left: 6px !important;   /* schöner Abstand */
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.ai-popup-btn:hover:not(:disabled) {
+  background: #000;
+  transform: translateY(-1px);
+}
+
+.ai-popup-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* --------------- CANCEL BUTTON (Abbrechen) --------------- */
+.ai-popup-cancel {
+  margin-top: 14px !important;           /* schöner Abstand */
+  background: #f2f2f2;
+  border: none;               /* kein outline */
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #444;
+  transition: 0.2s ease;
+}
+
+.ai-popup-cancel:hover {
+  background: #e5e5e5;
+}
+
+
+/* =======================================================
+   AI RESULT IN CARD
+   ======================================================= */
+
+.ai-result {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 12px;
+  animation: fadeInUp 0.35s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ai-result-label {
+  background: #fff2d9;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* =======================================================
+   CARD GLOW, wenn AI Ergebnis ankommt
+   ======================================================= */
+
+.highlight-card {
+  animation: glowPulse 0.8s ease;
+}
+
+@keyframes glowPulse {
+  0%   { box-shadow: 0 0 0 rgba(255, 200, 0, 0); }
+  50%  { box-shadow: 0 0 20px rgba(255, 200, 0, 0.35); }
+  100% { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); }
+}

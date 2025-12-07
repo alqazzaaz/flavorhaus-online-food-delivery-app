@@ -1,0 +1,262 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "allDishes": "Alle Gerichte",
+    "contact": "Kontakt",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "myOrders": "Bestellungen",
+    "logout": "Abmelden",
+    "cart": "Warenkorb",
+    "menuLabel": "Menü"
+  },
+
+  "header": {
+    "title": "FLAVOR HAUS",
+    "subtitle": "Bestell dein Lieblingsessen direkt bei uns.",
+    "qualityLine": "Premium-Qualität, faire Preise und schnelle Lieferung garantiert",
+    "orderNow": "Jetzt bestellen",
+
+    "feature1Title": "Frische Zutaten",
+    "feature1Desc": "Wir verwenden nur die frischesten Zutaten für unsere Gerichte.",
+
+    "feature2Title": "Schnelle Lieferung",
+    "feature2Desc": "Erhalte deine Bestellung in max 25 Minuten.",
+
+    "feature3Title": "Professioneller Service",
+    "feature3Desc": "Schnell, freundlich und zuverlässig.",
+
+    "feature4Title": "Parkmöglichkeiten",
+    "feature4Desc": "Praktische Parkplätze stehen dir jederzeit zur Verfügung."
+  },
+
+  "explorePage": {
+    "title": "Alle Gerichte entdecken",
+    "searchPlaceholder": "Suchen...",
+    "filterAll": "Alles"
+  },
+
+  "cart": {
+    "title": "Dein Warenkorb",
+    "empty": "Dein Warenkorb ist leer.",
+    "summaryTitle": "Bestellübersicht",
+    "subtotal": "Zwischensumme",
+    "shipping": "Lieferkosten",
+    "total": "Gesamtbetrag",
+    "checkout": "Zur Kasse",
+    "categoryLabel": "Kategorie",
+    "quantity": "Anzahl"
+  },
+
+  "placeOrder": {
+    "title": "Bestellung abschließen",
+    "detailsTitle": "Deine Angaben",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Handynummer",
+    "address": "Adresse",
+    "country": "Land",
+    "state": "Bundesland",
+    "zip": "PLZ",
+    "countryPlaceholder": "Auswählen...",
+    "statePlaceholder": "Auswählen...",
+    "submit": "Weiter zur Zahlung",
+    "a": "Deutschland",
+    "b": "Nordrhein-Westfalen",
+    "firstNamePlaceholder": "Vorname",
+    "lastNamePlaceholder": "Nachname",
+    "emailPlaceholder": "E-Mail Adresse",
+    "phonePlaceholder": "Handynummer",
+    "addressPlaceholder": "Straße, Hausnummer, etc.",
+    "zipPlaceholder": "PLZ"
+  },
+
+  "myorders": {
+    "c": "Artikel"
+  },
+
+  "auth": {
+    "loginTitle": "Anmelden",
+    "registerTitle": "Registrieren",
+    "name": "Vor- und Nachname",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "noAccount": "Hast du noch kein Konto?",
+    "alreadyAccount": "Hast du schon ein Konto?",
+    "loginSubmit": "Anmelden",
+    "registerSubmit": "Registrieren",
+    "reset": "Zurücksetzen",
+    "loginLink": "Anmelden",
+    "registerLink": "Registrieren"
+  },
+  "messages": {
+    "loginRequired": "Bitte zuerst einloggen.",
+    "loginFailed": "Anmeldung fehlgeschlagen. Bitte erneut versuchen.",
+    "registerSuccess": "Registrierung erfolgreich! Bitte anmelden.",
+    "registerFailed": "Registrierung fehlgeschlagen. Bitte erneut versuchen.",
+    "fetchFoodError": "Fehler beim Anzeigen der Gerichtdetails.",
+    "foodNotLoaded": "Gericht konnte nicht geladen werden.",
+    "aiEstimateFailed": "AI-Schätzung fehlgeschlagen.",
+    "addedToCart": "Zum Warenkorb hinzugefügt"
+  },
+
+  "payment": {
+    "fail": "Zahlung fehlgeschlagen",
+    "failDesc1": "Leider konnte Ihre Zahlung nicht verarbeitet werden.",
+    "failDesc2": "Bitte versuchen Sie es erneut oder verwenden Sie ein anderes Zahlungsmittel.",
+    "backHome": "Zurück zur Startseite",
+    "success": "Zahlung erfolgreich!",
+    "successDesc1": "Vielen Dank für Ihre Bestellung. Ihre Zahlung wurde erfolgreich verarbeitet.",
+    "successDesc2": "Sie erhalten in Kürze eine Bestätigungs-E-Mail mit allen Details."
+  },
+  "myOrders": {
+    "title": "Meine Bestellungen",
+    "order": "Bestellung",
+    "items": "Artikel",
+    "date": "Datum",
+    "total": "Gesamtbetrag"
+  },
+
+  "contactPage": {
+    "title": "Kontakt",
+    "subtitle": "Wir helfen dir gerne!",
+    "sendMessage": "Nachricht senden",
+    "formTitle": "Schreibe uns an",
+    "firstNamePlaceholder": "Vorname",
+    "lastNamePlaceholder": "Nachname",
+    "emailPlaceholder": "E-Mail Adresse",
+    "messagePlaceholder": "Deine Nachricht"
+  },
+
+  "modals": {
+    "aiEstimateTitle": "Portionsgröße schätzen",
+    "aiEstimateDesc": "Wie viel Gramm denkst du hat diese Portion ungefähr?",
+    "grams": "g",
+    "estimate": "Schätzen lassen",
+    "cancel": "Abbrechen"
+  },
+
+  "foodDetails": {
+    "ingredients": "Zutaten",
+    "nutrition": "Nährwerte",
+    "addToCart": "In den Warenkorb",
+    "aiEstimate": "Mit AI Kalorien schätzen ✨",
+    "category": "Kategorie",
+    "estimatedWithAI": "Mit AI geschätzt ✨",
+    "calories": "Kalorien",
+    "protein": "Protein",
+    "carbs": "Kohlenhydrate",
+    "fat": "Fett",
+    "portion": "Portion"
+  },
+
+  "menu": {
+    "title": "Unsere Speisekarte"
+  },
+
+  "categories": {
+    "all": "Alles",
+    "pizza": "Pizza",
+    "pasta": "Pasta",
+    "burger": "Burger",
+    "arabic": "Arabisches",
+    "salad": "Salat",
+    "dessert": "Dessert",
+    "drinks": "Getränke"
+  },
+
+  "buttons": {
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "add": "Hinzufügen",
+    "ok": "OK",
+    "continueShopping": "Weiter einkaufen"
+  },
+
+  "general": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "retry": "Erneut versuchen"
+  },
+
+  "featured": {
+    "title": "Beliebte Gerichte",
+    "seeAll": "Zum gesamten Menü →"
+  },
+  "card": {
+    "addToCart": "Hinzufügen",
+    "priceSuffix": "€",
+    "quantityPlus": "+",
+    "quantityMinus": "-",
+    "noItems": "Keine Gerichte verfügbar.",
+    "showDetails": "Anzeigen"
+  },
+
+  "testimonials": {
+    "title": "Bewertungen und Feedback",
+    "review1": "Ausgezeichnetes Essen und schneller Service! Ich liebe die Vielfalt der Gerichte. Einfach klasse!",
+    "review2": "Das Essen war unglaublich lecker! Lieferung super schnell und der Service sehr freundlich.",
+    "review3": "Frische Zutaten und perfekte Würzung! Jede Bestellung war bisher ein Volltreffer. Sehr empfehlenswert!",
+    "review4": "Top Qualität und super Preis-Leistungs-Verhältnis. Die Lieferung kam heiß an und schmeckte fantastisch."
+  },
+  "newsletter": {
+    "title": "Jetzt abonnieren und 10% Rabatt sichern",
+    "subtitle": "Sei der Erste, der die neuesten Neuigkeiten, Aktionen und vieles mehr erhält!",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "button": "Abonnieren"
+  },
+
+  "moreDetails": {
+    "back": "Zurück",
+    "backAria": "Zurück zur Startseite",
+    "title": "Mehr über mich"
+  },
+
+  "footer": {
+    "developedBy": "Entwickelt von",
+    "moreAboutMeBtn": "Mehr über mich lesen",
+    "aboutTitle": "Über uns",
+    "aboutText": "Wir sind zwei fleißige Informatik-Studenten der TU Dortmund mit großer Leidenschaft für den IT-Bereich. Dieses Full-Stack-Website haben wir eigenständig mit React, Spring Boot, MongoDB und Stripe umgesetzt und zusätzlich um KI-Funktionalitäten erweitert, um unsere Fähigkeiten weiterzuentwickeln und uns bestmöglich auf den Einstieg in den Arbeitsmarkt vorzubereiten.",
+    "copyright": "© 2025 A&M Flavor Haus. Alle Rechte vorbehalten."
+  },
+  "people": {
+    "mohammad": {
+      "name": "Mohammad El Zein",
+      "role": "Informatik Student",
+      "email": "mhmdzein70781311@gmail.com",
+      "githubLabel": "Mohammad GitHub",
+      "linkedinLabel": "Mohammad LinkedIn",
+      "whatsappLabel": "Mohammad WhatsApp"
+    },
+    "abdullah": {
+      "name": "Abdullah Al Qazzaz",
+      "role": "Informatik Student",
+      "email": "abood.emad10@yahoo.com",
+      "githubLabel": "Abdullah GitHub",
+      "linkedinLabel": "Abdullah LinkedIn",
+      "whatsappLabel": "Abdullah WhatsApp"
+    }
+  },
+
+  "categoryMap": {
+    "Arabisches": "Arabisches",
+    "Salat": "Salat",
+    "Pizza": "Pizza",
+    "Getränk": "Getränk"
+  },
+
+  "loginNew": {
+  "titleNew": "Anmelden",
+  "emailNew": "E-Mail",
+  "passwordNew": "Passwort",
+  "loginBtnNew": "Einloggen",
+  "resetBtnNew": "Zurücksetzen",
+  "noAccountNew": "Noch keinen Account?",
+  "registerNew": "Registrieren",
+  "successNew": "Erfolgreich eingeloggt!",
+  "failedNew": "Login fehlgeschlagen. Bitte überprüfen Sie Ihre Eingaben."
+}
+
+}

@@ -1,0 +1,453 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 9999;
+  background-color: #9a401c;
+  display: flex;
+}
+
+nav.navbar {
+  position: fixed;
+}
+@media (max-width: 576px) {
+  :root {
+    --nav-height: 64px;
+  }
+  .Headerr,
+  .home-header {
+    padding-top: calc(var(--nav-height) + 0.8rem);
+  }
+}
+
+.worter {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-right: 25px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd37a !important;
+}
+
+/* Active Page */
+.navbar .nav-link.active {
+  color: #f6ba20 !important;
+  font-weight: 600;
+}
+
+.navbar .btn-login {
+  padding: 8px 18px;
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar .btn-login:hover {
+  background-color: #f6ba20;
+  border-color: #f6ba20;
+  color: #ffffff !important;
+}
+
+.navbar .btn-register {
+  padding: 8px 18px;
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar .btn-register:hover {
+  background-color: #e3a619;
+  border-color: #e3a619;
+  color: #ffffff !important;
+}
+
+.user-icon-wrapper::after {
+  display: none !important;
+}
+
+.user-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-icon {
+  font-size: 40px !important;
+  color: white;
+  transition: color 0.2s;
+}
+
+.user-icon-wrapper:hover .user-icon {
+  color: #f6ba20;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 18px;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.15s, color 0.15s;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f6ba20;
+  color: #ffffff;
+}
+
+.navbar .container-fluid {
+  padding-right: 50px;
+}
+
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 22px;
+  min-height: 22px;
+  padding: 2px 6px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.cart-icon-wrapper:hover .cart-badge {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+}
+
+.cart-badge {
+  animation: pop-in 0.25s ease-out;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 850px) {
+}
+.mobile-menu-btn,
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  /* hide desktop link groups */
+  .desktop-links,
+  .desktop-icons {
+    display: none !important;
+  }
+
+  /* show mobile menu button */
+  .mobile-menu-btn {
+    display: inline-flex;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    padding: 8px 12px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+
+  /* full-width mobile menu panel */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: var(--nav-height, 80px); /* unter navbar */
+    left: 0;
+    right: 0;
+    background: #9a401c; /* Rot */
+    z-index: 9998;
+    padding: 18px 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .mobile-menu.open {
+    display: block;
+  }
+
+  .mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .mobile-link {
+    background: transparent;
+    border: none;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .mobile-link:hover {
+    color: #ffd37a;
+  }
+
+  .mobile-sep {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 8px 0;
+  }
+
+  .mobile-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  .mobile-icon-link,
+  .mobile-icon-btn,
+  .mobile-cart-link {
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mobile-cart-link svg,
+  .mobile-icon-btn svg {
+    font-size: 22px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 700px) {
+  .btn-login {
+    font-size: 0.6rem;
+  }
+  .btn-register {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 800px) {
+  /* erhöhte Spezifität auf container + Klassen */
+  nav.navbar .container-fluid .desktop-links,
+  nav.navbar .container-fluid .desktop-icons,
+  .navbar .desktop-links,
+  .navbar .desktop-icons {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* optional: falls .d-flex oder Bootstrap inline-blocks das Layout stören */
+  nav.navbar .container-fluid > .desktop-icons,
+  nav.navbar .container-fluid > .desktop-links {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 1001px) {
+  .desktop-links .nav-link {
+    font-size: 1.2rem; /* vorher 1.5rem, jetzt kleiner */
+    margin-right: 18px; /* optional etwas enger */
+  }
+
+  .navbar .btn-login,
+  .navbar .btn-register {
+    font-size: 0.8rem; /* kleiner, damit alles harmonisch ist */
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 901px) {
+  .desktop-links {
+    display: flex !important; /* Flexbox sicherstellen */
+    flex-direction: row !important; /* horizontal anordnen */
+    justify-content: center; /* optional zentrieren */
+    gap: 8px; /* Abstand zwischen Links */
+    flex-wrap: nowrap; /* kein Umbruch */
+  }
+
+  .desktop-links .nav-link {
+    font-size: 1rem; /* Schriftgröße etwas kleiner */
+    white-space: nowrap; /* verhindert Zeilenumbruch */
+  }
+
+  .desktop-icons {
+    gap: 14px; /* Abstand Buttons/Icon reduzieren */
+  }
+  .navbar .btn-login,
+  .navbar .btn-register {
+    font-size: 0.7rem; /* kleiner, damit alles harmonisch ist */
+  }
+}
+
+@media (max-width: 900px) and (min-width: 801px) {
+  .desktop-links {
+    display: flex !important; /* Flexbox sicherstellen */
+    flex-direction: row !important; /* horizontal anordnen */
+    justify-content: center; /* optional zentrieren */
+    gap: 8px; /* Abstand zwischen Links */
+    flex-wrap: nowrap; /* kein Umbruch */
+  }
+
+  .desktop-links .nav-link {
+    font-size: 0.8rem; /* Schriftgröße etwas kleiner */
+    white-space: nowrap; /* verhindert Zeilenumbruch */
+  }
+
+  .desktop-icons {
+    gap: 14px; /* Abstand Buttons/Icon reduzieren */
+  }
+  .navbar .btn-login,
+  .navbar .btn-register {
+    font-size: 0.5rem; /* kleiner, damit alles harmonisch ist */
+  }
+}
+@media (max-width: 990px) {
+  .mobile-menu-btn {
+    font-size: 36px; /* vorher 28px, jetzt größer */
+    width: 60px; /* optional: größerer klickbarer Bereich */
+    height: 70px; /* optional */
+    padding: 10px; /* etwas mehr Innenabstand */
+  }
+
+  .mobile-menu-btn svg {
+    font-size: 36px !important; /* das Icon selbst größer */
+  }
+}
+
+/* ----- GLOBAL LANGUAGE BUTTON ----- */
+/* ----- GLOBAL LANGUAGE BUTTON (EMOJI FLAG) ----- */
+/* --- Rundes Language Icon --- */
+/* --- Rundes Language Icon ohne Rand --- */
+.btn-lang-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none; /* Kein Rand */
+  padding: 0; /* Wichtig! */
+  overflow: hidden; /* Damit Flagge perfekt ausgeschnitten wird */
+  background: none; /* Kein Hintergrund */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 14px;
+  transition: transform 0.25s ease;
+}
+
+/* Hover Effekt */
+.btn-lang-circle:hover {
+  transform: scale(1.1);
+}
+
+/* Flagge skaliert genau in den Kreis */
+.flag-icon-circle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Füllt den Kreis */
+  border-radius: 50%; /* Flagge selbst auch rund */
+}
+
+/* Mobile kleiner */
+@media (max-width: 800px) {
+  .btn-lang-circle {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+  }
+}
+/* Mobile Language Button — versteckt auf Desktop */
+.btn-lang-circle-mobile {
+  display: none;
+}
+
+/* Nur auf Mobile anzeigen */
+@media (max-width: 800px) {
+  .btn-lang-circle-mobile {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    margin-right: 8px; /* schön neben dem Menübutton */
+    margin-bottom: 12px;
+    background: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* Flagge auch rund */
+  .btn-lang-circle-mobile .flag-icon-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  /* Hover Effekt */
+  .btn-lang-circle-mobile:hover {
+    transform: scale(1.1);
+  }
+}

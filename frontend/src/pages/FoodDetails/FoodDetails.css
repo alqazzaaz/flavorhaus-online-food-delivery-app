@@ -1,0 +1,193 @@
+.arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;              /* quadratisch */
+  height: 36px;
+  margin-top: 1rem;         /* Abstand nach oben */
+  background: transparent;   /* normal transparent */
+  border: 1px solid rgb(213, 209, 209);  /* optional, nur für Rahmen */
+  border-radius: 6px;       /* leicht abgerundet */
+  color: black;             /* Pfeil schwarz */
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-right: 3rem;
+}
+
+/* Pfeil wird weiß beim Hover / Press */
+.arrow-btn:hover,
+.arrow-btn:active,
+.arrow-btn:focus {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+/* Icon etwas kleiner */
+.arrow-btn i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+
+
+
+/* ---- AI LINK ---- */
+.ai-details-link {
+  color: #444 !important;
+  text-decoration: underline !important;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.ai-details-link:hover {
+  color: #000 !important;
+}
+
+/* ---- POPUP OVERLAY ---- */
+.ai-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  backdrop-filter: blur(2px);
+}
+
+/* ---- POPUP CARD ---- */
+.ai-popup {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
+  width: 380px;
+  max-width: 90%;
+  text-align: center;
+  animation: fadeIn 0.25s ease;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* ---- INPUT ROW (Input + g) ---- */
+.ai-popup-input-row {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ai-popup-input {
+  width: 110px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: right;
+}
+
+.ai-popup-input-unit {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ---- POPUP BUTTONS ---- */
+.ai-popup-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ai-popup-cancel,
+.ai-popup-ok {
+  flex: 1;
+  margin: 0 6px;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-size: 0.95rem;
+}
+
+.ai-popup-cancel {
+  background: #fff;
+  color: #333;
+}
+
+.ai-popup-cancel:hover:not(:disabled) {
+  background: #eee;
+}
+
+.ai-popup-ok {
+  background: #000;
+  color: white;
+  height: calc(100% - 4px);
+  margin-top: 13px;
+}
+
+.ai-popup-ok:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+/* disabled */
+.ai-popup-cancel:disabled,
+.ai-popup-ok:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* ---- AI RESULT BOX ---- */
+.ai-details-result {
+  background: #f5f5f5;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 14px;
+  font-size: 1rem;
+  line-height: 1.4;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.08);
+}
+
+/* 🔮 Mit AI geschätzt Label */
+.ai-result-label {
+  background: linear-gradient(135deg, #ffeef8, #fff7e8);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* ---- SLIDE IN ANIMATION ---- */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+/* ---- POPUP FADE-IN ---- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

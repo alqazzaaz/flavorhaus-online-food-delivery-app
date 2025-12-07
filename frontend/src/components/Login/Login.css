@@ -1,0 +1,19 @@
+.login-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-login {
+  padding: 8px 18px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-login:hover {
+  color: #ffd37a;
+  border-color: #ffd37a;
+}

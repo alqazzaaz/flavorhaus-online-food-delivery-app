@@ -1,0 +1,262 @@
+{
+  "navbar": {
+    "home": "Home",
+    "allDishes": "All dishes",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "myOrders": "My orders",
+    "logout": "Logout",
+    "cart": "Cart",
+    "menuLabel": "Menu"
+  },
+
+  "header": {
+    "title": "FLAVOR HAUS",
+    "subtitle": "Order your favorite meals directly from us.",
+    "qualityLine": "Premium quality, fair prices and fast delivery guaranteed",
+    "orderNow": "Order Now",
+
+    "feature1Title": "Fresh Ingredients",
+    "feature1Desc": "We use only the freshest ingredients for our dishes.",
+
+    "feature2Title": "Fast Delivery",
+    "feature2Desc": "Receive your order in a maximum of 25 minutes.",
+
+    "feature3Title": "Professional Service",
+    "feature3Desc": "Fast, friendly and reliable.",
+
+    "feature4Title": "Parking Options",
+    "feature4Desc": "Convenient parking spaces are always available."
+  },
+
+  "explorePage": {
+    "title": "Explore all dishes",
+    "searchPlaceholder": "Search...",
+    "filterAll": "All"
+  },
+
+  "foodDetails": {
+    "ingredients": "Ingredients",
+    "nutrition": "Nutrition",
+    "addToCart": "Add to cart",
+    "aiEstimate": "Estimate calories with AI ✨",
+    "category": "Category",
+    "estimatedWithAI": "Estimated with AI ✨",
+    "calories": "Calories",
+    "protein": "Protein",
+    "carbs": "Carbohydrates",
+    "fat": "Fat",
+    "portion": "Portion"
+  },
+  "testimonials": {
+    "title": "Reviews and Feedback",
+    "review1": "Excellent food and fast service! I love the variety of dishes. Simply great!",
+    "review2": "The food was incredibly delicious! Delivery was super fast and the service very friendly.",
+    "review3": "Fresh ingredients and perfect seasoning! Every order so far has been a hit. Highly recommended!",
+    "review4": "Top quality and great value for money. The food arrived hot and tasted fantastic."
+  },
+  "newsletter": {
+    "title": "Subscribe now and get 10% off",
+    "subtitle": "Be the first to receive the latest news, offers and more!",
+    "emailPlaceholder": "Enter your email address",
+    "button": "Subscribe"
+  },
+
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "summaryTitle": "Order summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total amount",
+    "checkout": "Checkout",
+    "categoryLabel": "Category",
+    "quantity": "Quantity"
+  },
+
+  "placeOrder": {
+    "title": "Place order",
+    "detailsTitle": "Your details",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone number",
+    "address": "Address",
+    "country": "Country",
+    "state": "State",
+    "zip": "ZIP code",
+    "countryPlaceholder": "Select...",
+    "statePlaceholder": "Select...",
+    "submit": "Proceed to payment",
+    "a": "Germany",
+    "b": "North Rhine-Westphalia",
+    "firstNamePlaceholder": "First name",
+    "lastNamePlaceholder": "Last name",
+    "emailPlaceholder": "Email address",
+    "phonePlaceholder": "Phone number",
+    "addressPlaceholder": "Street, house number, etc.",
+    "zipPlaceholder": "ZIP code"
+  },
+
+  "myorders": {
+    "c": "Items"
+  },
+
+  "auth": {
+    "loginTitle": "Login",
+    "registerTitle": "Register",
+    "name": "First and last name",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "noAccount": "Don't have an account yet?",
+    "alreadyAccount": "Already have an account?",
+    "loginSubmit": "Login",
+    "registerSubmit": "Register",
+    "reset": "Reset",
+    "loginLink": "Login",
+    "registerLink": "Register"
+  },
+  "messages": {
+    "loginRequired": "Please log in first.",
+    "loginFailed": "Login failed. Please try again.",
+    "registerSuccess": "Registration successful! Please log in.",
+    "registerFailed": "Registration failed. Please try again.",
+    "fetchFoodError": "Error while loading the dish details.",
+    "foodNotLoaded": "The dish could not be loaded.",
+    "aiEstimateFailed": "AI estimation failed.",
+    "addedToCart": "Added to cart"
+  },
+
+  "payment": {
+    "fail": "Payment failed",
+    "failDesc1": "Unfortunately, your payment could not be processed.",
+    "failDesc2": "Please try again or use a different payment method.",
+    "backHome": "Back to Home",
+    "success": "Payment Successful!",
+    "successDesc1": "Thank you for your order. Your payment has been processed successfully.",
+    "successDesc2": "You will receive a confirmation email shortly with all the details."
+  },
+  "myOrders": {
+    "title": "My Orders",
+    "order": "Order",
+    "items": "Items",
+    "date": "Date",
+    "total": "Total Amount"
+  },
+
+  "contactPage": {
+    "title": "Contact",
+    "subtitle": "We are happy to help!",
+    "sendMessage": "Send message",
+    "formTitle": "Send us a message",
+    "firstNamePlaceholder": "First name",
+    "lastNamePlaceholder": "Last name",
+    "emailPlaceholder": "Email address",
+    "messagePlaceholder": "Your message"
+  },
+
+  "modals": {
+    "aiEstimateTitle": "Estimate portion size",
+    "aiEstimateDesc": "How many grams do you think this portion roughly has?",
+    "grams": "g",
+    "estimate": "Estimate",
+    "cancel": "Cancel"
+  },
+
+  "buttons": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "add": "Add",
+    "ok": "OK",
+    "continueShopping": "Continue shopping"
+  },
+
+  "moreDetails": {
+    "back": "Back",
+    "backAria": "Back to home",
+    "title": "More about me"
+  },
+
+  "general": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry"
+  },
+
+  "featured": {
+    "title": "Popular Dishes",
+    "seeAll": "View full menu →"
+  },
+
+  "menu": {
+    "title": "Our Menu"
+  },
+
+  "categories": {
+    "all": "All",
+    "pizza": "Pizza",
+    "pasta": "Pasta",
+    "burger": "Burger",
+    "arabic": "Arabic",
+    "salad": "Salad",
+    "dessert": "Dessert",
+    "drinks": "Drinks"
+  },
+  "card": {
+    "addToCart": "Add to cart",
+    "priceSuffix": "€",
+    "quantityPlus": "+",
+    "quantityMinus": "-",
+    "noItems": "No dishes available.",
+    "showDetails": "View"
+  },
+
+  "footer": {
+    "developedBy": "Developed by",
+    "moreAboutMeBtn": "Read more about me",
+    "aboutTitle": "About us",
+    "aboutText": "We are two hardworking and ambitious Computer Science students at TU Dortmund University with a strong passion for Information Technology. We independently developed this full-stack website using React, Spring Boot, MongoDB and Stripe, and enhanced it with AI-powered features to further strengthen our technical skills and prepare for our professional careers.",
+    "copyright": "© 2025 A&M Flavor Haus. All rights reserved."
+  },
+
+  "people": {
+    "mohammad": {
+      "name": "Mohammad El Zein",
+      "role": "Computer Science Student",
+      "email": "mhmdzein70781311@gmail.com",
+      "githubLabel": "Mohammad GitHub",
+      "linkedinLabel": "Mohammad LinkedIn",
+      "whatsappLabel": "Mohammad WhatsApp"
+    },
+    "abdullah": {
+      "name": "Abdullah Al Qazzaz",
+      "role": "Computer Science Student",
+      "email": "abood.emad10@yahoo.com",
+      "githubLabel": "Abdullah GitHub",
+      "linkedinLabel": "Abdullah LinkedIn",
+      "whatsappLabel": "Abdullah WhatsApp"
+    }
+  },
+
+  
+  "categoryMap": {
+    "Arabisches": "Arabic",
+    "Salat": "Salad",
+    "Getränk": "Drinks"
+  },
+
+  "loginNew": {
+  "titleNew": "Login",
+  "emailNew": "Email",
+  "passwordNew": "Password",
+  "loginBtnNew": "Log in",
+  "resetBtnNew": "Reset",
+  "noAccountNew": "Don't have an account?",
+  "registerNew": "Register",
+  "successNew": "Successfully logged in!",
+  "failedNew": "Login failed. Please check your inputs."
+}
+
+}

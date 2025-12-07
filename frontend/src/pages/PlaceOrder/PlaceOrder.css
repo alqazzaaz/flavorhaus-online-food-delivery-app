@@ -1,0 +1,23 @@
+.placeorder-btn {
+  background-color: #e9b000; /* Gold */
+  color: #1b1b1b; /* Schwarz */
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;    /* Abstand NACH OBEN */
+  margin-bottom: 40px; /* Abstand NACH UNTEN */
+}
+
+.placeorder-btn:hover {
+  background-color: #c99300; /* dunkleres Gold */
+}
+
+.placeorder-btn:disabled {
+  background-color: #d1d1d1 !important;
+  color: #7a7a7a !important;
+  cursor: not-allowed;
+}

@@ -1,0 +1,70 @@
+/* Section spacing */
+.contact-section {
+  padding: 60px 0;
+}
+
+/* Form container */
+.contact-form-wrapper {
+  background: #ffffff;
+  padding: 40px 45px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.contact-title {
+  font-size: 2rem;
+  
+  letter-spacing: 0.5px;
+}
+
+/* Inputs */
+.custom-input {
+  border-radius: 10px;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.custom-input:focus {
+  border-color: #f6ba20;
+  box-shadow: 0 0 0 3px rgba(246, 186, 32, 0.35);
+  background: #fff;
+}
+
+/* Submit button */
+.contact-btn {
+  background-color: #f6ba20;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1b1b1b;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e0a218;
+  transform: translateY(-2px);
+}
+
+.contact-btn:active {
+  transform: translateY(0px);
+}
+.contact-signature {
+  margin-top: 30px;
+  opacity: 0.8;
+}
+
+.signature-text {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+}
